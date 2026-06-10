@@ -5,20 +5,20 @@
 class Kamu < Formula
   desc "Unified CLI for the Kamu platform — drive kamudb, kamubee, and kamudns with one auth"
   homepage "https://github.com/kotisivukamu/kamu-cli"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kotisivukamu/kamu-cli/releases/download/v0.2.0/kamu_0.2.0_darwin_amd64.tar.gz"
-      sha256 "796c9518e8fee12ccbb29bf8c08f6e28b3cae27ead548c1e94c0441b310e5073"
+      url "https://github.com/kotisivukamu/kamu-cli/releases/download/v0.2.1/kamu_0.2.1_darwin_amd64.tar.gz"
+      sha256 "bc1d0375a7b861c0257eea27887545172b4f219b32e1e6fb41c3b2f90809241e"
 
       define_method(:install) do
         bin.install "kamu"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kotisivukamu/kamu-cli/releases/download/v0.2.0/kamu_0.2.0_darwin_arm64.tar.gz"
-      sha256 "0850c68c81bbc6c62790facb4d7ba858c2a20455f4c72278299784a3425a605f"
+      url "https://github.com/kotisivukamu/kamu-cli/releases/download/v0.2.1/kamu_0.2.1_darwin_arm64.tar.gz"
+      sha256 "f5537642ef60391a7c637f744ac5465ca09fb0ddbc1824e3127083bd20081eb9"
 
       define_method(:install) do
         bin.install "kamu"
@@ -28,15 +28,15 @@ class Kamu < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kotisivukamu/kamu-cli/releases/download/v0.2.0/kamu_0.2.0_linux_amd64.tar.gz"
-      sha256 "751bdb58be4418e82c1c999e35d0d8174a93b98a4a2a141b8846ac2d2334ece6"
+      url "https://github.com/kotisivukamu/kamu-cli/releases/download/v0.2.1/kamu_0.2.1_linux_amd64.tar.gz"
+      sha256 "54151a49a2950b8ce88702e940291b4b2cc4fafd35d82ad5318e6fcfda15a0c1"
       define_method(:install) do
         bin.install "kamu"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kotisivukamu/kamu-cli/releases/download/v0.2.0/kamu_0.2.0_linux_arm64.tar.gz"
-      sha256 "07ff0fe5845dd1854549fafd9c97a0d39042f50d7226cd5c27cd01985643dc27"
+      url "https://github.com/kotisivukamu/kamu-cli/releases/download/v0.2.1/kamu_0.2.1_linux_arm64.tar.gz"
+      sha256 "18fcfc03379f68f0017331943b01dcc45e071d07e36938b6d3610b9e08ac06da"
       define_method(:install) do
         bin.install "kamu"
       end
